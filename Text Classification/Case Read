@@ -1,0 +1,35 @@
+EHR DataSet HackerEarth Question
+
+*Medical Text Classification for Disease Category Prediction*
+
+Electronic health records contain vast amounts of unstructured clinical text. The efficient categorization of these medical texts by disease type is crucial for hospital information management, 
+clinical research, and automated decision support systems. 
+Accurate classification can improve patient care by enabling faster information retrieval and supporting clinical decision-making.
+
+You are working as a data scientist for a healthcare technology company. 
+Your task is to build a natural language processing model that can classify medical texts into different disease categories based on their content.
+These classifications will help healthcare providers organize clinical documents, support medical coding, and enhance clinical decision support systems.
+
+Column name Column description
+text_id Unique identifier for each text sample
+text    Medical text content (clinical notes, reports, etc.)
+word_count  Number of words in the text
+readability_score   Measure of text complexity (0-100)
+keywords    Common medical terms extracted from the text
+category    Disease category classification (target variable)
+The disease categories include:
+
+Cardiovascular
+Respiratory
+Gastrointestinal
+Neurological
+Endocrine
+Musculoskeletal
+Dermatological
+Infectious
+Evaluation Metric
+
+The models will be evaluated using a weighted F1 score, which accounts for class imbalance in the dataset:
+
+score = 100 * f1_score(actual, predicted, average='weighted')
+
